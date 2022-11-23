@@ -68,7 +68,12 @@ exports.highGPA = () => {
                 }
             }
         }
-        res(high_gpa);
+        if (students.length === 0 || high_gpa.length === 0) {
+            rej("Failed finding the student with the highest GPA");
+        }
+        else {
+            res(high_gpa);
+        }
     })
 }
 

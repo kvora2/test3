@@ -1,15 +1,17 @@
 <body>
     <h1>Student Info:</h1>
 
-    <p>Student ID: {{student.studId}} </p>
+    {{#each student}}
+    <p>Student ID: {{studId}} </p>
     <br>
 
-    <p>Name: {{student.name}} </p>
+    <p>Name: {{name}} </p>
     <br>
 
-    <p>Program: {{student.program}} </p>
+    <p>Program: {{program}} </p>
     <br>
 
-    <p>GPA: {{student.gpa}} </p>
+    <p>GPA: {{gpa}} </p>
     <br>
+    {{/each}}
 </body>

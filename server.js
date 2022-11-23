@@ -7,7 +7,7 @@ No part of this assignment has been copied manually or electronically from any o
 * Name: Kelvin Vora Student ID: 157616210 Date: 19th Oct 2022
 *
 * Your app’s URL (from Cyclic Heroku) that I can click to see your application:
-* https://brainy-tux-bat.cyclic.app/
+* https://periwinkle-tuxedo.cyclic.app 
 *
 *************************************************************************/
 
@@ -17,7 +17,7 @@ var exphbs = require('express-handlebars');
 var app = express();
 
 var HTTP_PORT = process.env.PORT || 8080;
-var data = require("./test2_moduleB.js");
+var data = require("./data_prep.js");
 
 function onHttpStart() {
     console.log("Express http server listening on: " + HTTP_PORT);
