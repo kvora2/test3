@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>
+        students with BSD
+    </title>
+</head>
+
+<body>
+    <h1>Student List</h1>
+
+    <table>
+        <tr>
+            <th>Student ID</th>
+            <th>Name</th>
+            <th>Program</th>
+            <th>GPA</th>
+        </tr>
+
+        {{#each students}}
+        <tr>
+            <td> {{studId}} </td>
+            <td> {{name}} </td>
+            <td> {{program}} </td>
+            <td> {{gpa}} </td>
+        </tr>
+        {{/each}}
+    </table>
+</body>
+
+</html>

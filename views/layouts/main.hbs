@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>
+        main
+    </title>
+
+    <style>
+        table,th,td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <ul>
+            {{#navLink "/BSD"}}BSD Students{{/navLink}}
+            {{#navLink "/allStudents"}}All Students{{/navLink}}
+            {{#navLink "/highGPA"}}Highest GPA{{/navLink}}
+            {{#navLink "/"}}Home{{/navLink}}
+        </ul>
+    </div>
+    <hr>
+    <div>
+        {{{body}}}
+    </div>
+    <hr>
+    <div>
+        <h1>Student Honour Pledge:</h1>
+
+        <p>I acknowledge the College's academic integrity policy.</p>
+        <p>Name: <mark>Kelvin Vora</mark><br><br>Student Number: <mark>157616210</mark></p>
+    </div>
+</body>
+
+</html>
